@@ -1,0 +1,23 @@
+{
+  "name": "react-native-web-example",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "react-native start",
+    "dev": "node ./web/start-dev-server"
+  },
+  "dependencies": {
+    "react-native": "^0.17.0",
+    "react-web": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel": "5.8.19",
+    "babel-core": "5.8.19",
+    "babel-loader": "5.1.3",
+    "haste-resolver-webpack-plugin": "0.1.2",
+    "json-loader": "0.5.2",
+    "react-hot-loader": "1.2.7",
+    "webpack": "1.9.10",
+    "webpack-dev-server": "1.9.0",
+    "webpack-html-plugin": "0.1.1"
+  }
+}
