@@ -13,5 +13,10 @@ npm start
 
 Start web dev server:
 ```
-npm run dev
+npm run web-dev
+```
+
+Build web bundle:
+```
+npm run web-bundle
 ```

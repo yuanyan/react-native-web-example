@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "scripts": {
     "start": "react-native start",
-    "dev": "node ./web/start-dev-server"
+    "web-dev": "node web/start-dev-server",
+    "web-bundle": "webpack --config web/webpack.config.js --colors"
   },
   "dependencies": {
     "react-native": "^0.17.0",
-    "react-web": "^0.1.0"
+    "react-web": "^0.1.2"
   },
   "devDependencies": {
     "babel": "5.8.19",

@@ -25,7 +25,7 @@ module.exports = {
     alias: {
       'react-native': 'react-web',
     },
-    extensions: ['', '.js', '.jsx', '.png', '.jpg'],
+    extensions: ['', '.js', '.jsx'],
   },
   entry: [
     'webpack-dev-server/client?http://' + IP + ':' + PORT,
