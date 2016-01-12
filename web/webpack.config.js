@@ -9,6 +9,9 @@ var IP = '0.0.0.0';
 var PORT = 3000;
 var NODE_ENV = process.env.NODE_ENV;
 var ROOT_PATH = path.resolve(__dirname, '..');
+var PROD = 'production';
+var DEV = 'development';
+let isProd = NODE_ENV === 'production';
 
 var config = {
   paths: {
@@ -24,16 +27,19 @@ module.exports = {
   resolve: {
     alias: {
       'react-native': 'react-web',
+      'ReactNativeART': 'react-art',
     },
     extensions: ['', '.js', '.jsx'],
   },
-  entry: [
+  entry: isProd? [
+    config.paths.index
+  ]: [
     'webpack-dev-server/client?http://' + IP + ':' + PORT,
     'webpack/hot/only-dev-server',
     config.paths.index,
   ],
   output: {
-    path: __dirname,
+    path: path.join(__dirname, 'output'),
     filename: 'bundle.js'
   },
   plugins: [
@@ -43,10 +49,12 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('development'),
+        'NODE_ENV': JSON.stringify(isProd? PROD: DEV),
       }
     }),
-    new webpack.HotModuleReplacementPlugin(),
+    isProd? new webpack.ProvidePlugin({
+      React: "react"
+    }): new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new HtmlPlugin(),
   ],

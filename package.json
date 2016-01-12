@@ -4,11 +4,11 @@
   "scripts": {
     "start": "react-native start",
     "web-dev": "node web/start-dev-server",
-    "web-bundle": "webpack --config web/webpack.config.js --colors"
+    "web-bundle": "NODE_ENV=production webpack --config web/webpack.config.js --colors"
   },
   "dependencies": {
     "react-native": "^0.17.0",
-    "react-web": "^0.1.2"
+    "react-web": "^0.1.3"
   },
   "devDependencies": {
     "babel": "5.8.19",
