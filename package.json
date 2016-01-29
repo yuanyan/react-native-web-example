@@ -2,13 +2,11 @@
   "name": "react-native-web-example",
   "version": "0.0.1",
   "scripts": {
-    "start": "react-native start",
-    "web-dev": "node web/start-dev-server",
-    "web-bundle": "NODE_ENV=production webpack --config web/webpack.config.js --colors"
+    "start": "react-native start"
   },
   "dependencies": {
     "react-native": "^0.17.0",
-    "react-web": "^0.1.3"
+    "react-web": "^0.2.0"
   },
   "devDependencies": {
     "babel": "5.8.19",
