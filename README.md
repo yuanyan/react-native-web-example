@@ -17,10 +17,10 @@ npm start
 
 Start web dev server:
 ```
-npm run web-dev
+react-web start
 ```
 
 Build web bundle:
 ```
-npm run web-bundle
+react-web bundle
 ```
