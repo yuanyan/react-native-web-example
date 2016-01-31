@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "react-native": "^0.17.0",
-    "react-web": "^0.2.0"
+    "react-web": "^0.2.1"
   },
   "devDependencies": {
     "babel": "5.8.19",
