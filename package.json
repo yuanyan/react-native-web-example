@@ -5,6 +5,8 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "react": "0.14.7",
+    "react-dom": "0.14.7",
     "react-native": "^0.17.0",
     "react-web": "^0.2.1"
   },
@@ -15,6 +17,7 @@
     "haste-resolver-webpack-plugin": "0.1.2",
     "json-loader": "0.5.2",
     "react-hot-loader": "1.2.7",
+    "react-native-cli": "0.1.10",
     "webpack": "1.9.10",
     "webpack-dev-server": "1.9.0",
     "webpack-html-plugin": "0.1.1"
